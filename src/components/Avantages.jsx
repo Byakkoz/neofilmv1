@@ -181,10 +181,13 @@ const Avantages = () => {
   }`}
   style={{
     marginTop: isWidth1440 ? '-200px' : '12px', // Remonte l'élément pour 1440px
+    width: isWidth1440 ? '90%' : '100%', // Réduit la taille pour 1440px
+    height: isWidth1440 ? 'auto' : 'auto', // Ajustement si nécessaire
   }}
 >
   <ImageSlider />
 </div>
+
 
     </section>
   );
