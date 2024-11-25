@@ -201,7 +201,7 @@ const Header = () => {
             : isSmallScreen
             ? 'top-[350px] right-0 w-[280px]'
             : isWidth1440
-            ? 'top-[350px] right-[60px] w-[500px]' // Déplacement spécifique pour 1440px
+            ? 'top-[330px] right-[80px] w-[500px]' // Déplacement spécifique pour 1440px
             : 'top-[350px] right-[180px] w-[500px]' // Par défaut
         }`}
         animate={{
