@@ -61,11 +61,17 @@ const Installation = () => {
       </div>
 
       {/* Ligne verticale à gauche */}
-      <div 
-        className={`${isBelow768 ? 'left-[5%] top-[20%] h-[40%] w-[2px]' : 'absolute left-[9%] top-[35%] h-[55%] w-[3px]'} bg-gradient-to-b from-[#79071E] via-[#EE5DFB] to-[#11E8FA]`}
+      <div
+        className={`${
+          isBelow768
+            ? 'left-[5%] top-[20%] h-[40%] w-[2px]'
+            : `absolute left-[9%] ${
+                isWidth1440 ? 'top-[37%]' : 'top-[35%]' // Baisse légèrement pour 1440px
+              } h-[55%] w-[3px]`
+        } bg-gradient-to-b from-[#79071E] via-[#EE5DFB] to-[#11E8FA]`}
       >
-        
       </div>
+
 
       {/* Bloc des étapes avec lignes horizontales collées à la ligne verticale */}
       <div className={`relative ${isWidth1440 ? 'w-[66.5%] space-y-4' : 'w-[70%] space-y-8'} flex flex-col`}>
@@ -166,7 +172,7 @@ const Installation = () => {
             className="bg-gradient-to-b from-[#11E8FA] to-[#EE5DFB] rounded-lg p-0"
             style={{
               width: '510px', // Taille du cadre
-              height: isWidth1440 ? '780px' : '945px', // Diminution de la hauteur pour 1440px
+              height: isWidth1440 ? '778px' : '945px', // Diminution de la hauteur pour 1440px
             }}
           >
             <motion.img
