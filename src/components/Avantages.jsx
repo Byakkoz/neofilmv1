@@ -180,7 +180,7 @@ const Avantages = () => {
     isWidth1440 ? 'ml-[-490px]' : '' // Décalage vers la gauche pour 1440px
   }`}
   style={{
-    marginTop: isWidth1440 ? '120px' : '12px', // Remonte l'élément pour 1440px
+    marginTop: isWidth1440 ? '20px' : '12px', // Remonte l'élément pour 1440px
   }}
 >
   <ImageSlider />
