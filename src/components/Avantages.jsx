@@ -180,7 +180,7 @@ const Avantages = () => {
         isWidth1440 ? 'ml-[-490px]' : '' // Décalage vers la gauche pour 1440px
       }`}
       style={{
-        marginTop: isWidth1440 ? '-200px' : '12px', // Remonte l'élément pour 1440px
+        marginTop: isWidth1440 ? '-170px' : '12px', // Remonte l'élément pour 1440px
         transform: isWidth1440 ? 'scale(0.9)' : 'scale(1)', // Réduit la taille pour 1440px
         transformOrigin: 'center', // Centre la transformation
       }}
