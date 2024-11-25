@@ -54,7 +54,7 @@ const Adaptation = () => {
         }`}
         style={{
           fontFamily: 'Adieu, sans-serif',
-          marginTop: isWidth1440 ? '70px' : '0px', // Baisse pour 1440px
+          marginTop: isWidth1440 ? '90px' : '0px', // Baisse pour 1440px
         }}
       >
         UNE SIGNALETIQUE <br /> ADAPTABLE ET MODULABLE
