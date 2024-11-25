@@ -176,17 +176,18 @@ const Avantages = () => {
 
 
       <div
-  className={`w-full h-auto mt-12 ${
-    isWidth1440 ? 'ml-[-490px]' : '' // Décalage vers la gauche pour 1440px
-  }`}
-  style={{
-    marginTop: isWidth1440 ? '-200px' : '12px', // Remonte l'élément pour 1440px
-    width: isWidth1440 ? '70%' : '100%', // Réduit la taille pour 1440px
-    height: isWidth1440 ? 'auto' : 'auto', // Ajustement si nécessaire
-  }}
->
-  <ImageSlider />
-</div>
+      className={`w-full h-auto mt-12 ${
+        isWidth1440 ? 'ml-[-490px]' : '' // Décalage vers la gauche pour 1440px
+      }`}
+      style={{
+        marginTop: isWidth1440 ? '-200px' : '12px', // Remonte l'élément pour 1440px
+        transform: isWidth1440 ? 'scale(0.9)' : 'scale(1)', // Réduit la taille pour 1440px
+        transformOrigin: 'center', // Centre la transformation
+      }}
+    >
+      <ImageSlider />
+    </div>
+
 
 
     </section>
