@@ -48,14 +48,18 @@ const Adaptation = () => {
           isWidth1440 ? 'left-[-300px]' : 'left-[-360px]' // Ajustement pour 1440px
         }`}
       >
-    <h2
-      className={`text-6xl font-bold text-black text-left leading-tight mb-4 ${
-        isWidth1440 ? 'ml-[250px]' : '' // Décalage vers la droite pour 1440px
-      }`}
-      style={{ fontFamily: 'Adieu, sans-serif' }}
-    >
-      UNE SIGNALETIQUE <br /> ADAPTABLE ET MODULABLE
-    </h2>
+      <h2
+        className={`text-6xl font-bold text-black text-left leading-tight mb-4 ${
+          isWidth1440 ? 'ml-[250px]' : '' // Décalage vers la droite pour 1440px
+        }`}
+        style={{
+          fontFamily: 'Adieu, sans-serif',
+          marginTop: isWidth1440 ? '70px' : '0px', // Baisse pour 1440px
+        }}
+      >
+        UNE SIGNALETIQUE <br /> ADAPTABLE ET MODULABLE
+      </h2>
+
 
       </div>
 
@@ -63,8 +67,8 @@ const Adaptation = () => {
       <div
       className={`${
         isWidth1440 ? 'w-[90%]' : 'w-[60%]' // Augmente la largeur pour 1440px
-      } h-[2px] bg-gradient-to-r from-[#11E8FA] via-[#EE5DFB] to-[#79071E] my-4 relative top-[-130px] ${
-        isWidth1440 ? 'left-[-290px]' : 'left-[-388px]' // Ajustement pour 1440px
+      } h-[2px] bg-gradient-to-r from-[#11E8FA] via-[#EE5DFB] to-[#79071E] my-4 relative ${
+        isWidth1440 ? 'top-[-120px] left-[-290px]' : 'top-[-130px] left-[-388px]'
       }`}
     />
 

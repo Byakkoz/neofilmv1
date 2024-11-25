@@ -118,26 +118,26 @@ const ImageSlider = () => {
         </div>
       </div>
 
-      {/* Indicateurs de pagination avec le dégradé linéaire horizontal */}
       <div
-        className={`absolute bottom-[-510px] ${
-          isWidth1440 ? 'left-[calc(50%+500px)]' : 'left-[calc(50%+330px)]' // Ajustement pour 1440px
-        } flex items-center justify-center space-x-2 p-[4px] rounded-full`}
-        style={{
-          background: 'linear-gradient(90deg, #79071E 0%, #11E8FA 100%)',
-        }}
-      >
-        <div className="flex space-x-2 p-1 bg-[#444444] rounded-full">
-          {images.map((_, index) => (
-            <div
-              key={index}
-              className={`w-3 h-3 rounded-full ${
-                currentIndex === index ? 'bg-[#79071E]' : 'bg-white'
-              }`}
-            />
-          ))}
-        </div>
+      className={`absolute ${
+        isWidth1440 ? 'bottom-[-440px]' : 'bottom-[-510px]'
+      } ${isWidth1440 ? 'left-[calc(50%+500px)]' : 'left-[calc(50%+330px)]'} flex items-center justify-center space-x-2 p-[4px] rounded-full`}
+      style={{
+        background: 'linear-gradient(90deg, #79071E 0%, #11E8FA 100%)',
+      }}
+    >
+      <div className="flex space-x-2 p-1 bg-[#444444] rounded-full">
+        {images.map((_, index) => (
+          <div
+            key={index}
+            className={`w-3 h-3 rounded-full ${
+              currentIndex === index ? 'bg-[#79071E]' : 'bg-white'
+            }`}
+          />
+        ))}
       </div>
+    </div>
+
     </section>
   );
 };
