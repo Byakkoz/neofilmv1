@@ -33,7 +33,7 @@ const PartenaireSection = () => {
       <div
         className="gradient-box absolute md:top-[20.5%] md:w-2/3 h-[75px] flex items-center justify-center z-0"
         style={{
-          top: isWidth1440 ? '24%' : '20.5%', // Ajuste la position verticale pour 1440px
+          top: isWidth1440 ? '25%' : '20.5%', // Ajuste la position verticale pour 1440px
           width: isWidth1440 ? '84%' : '65%', // Largeur 75% pour 1440px et w-11/12 par défaut
           padding: '2px',
           borderRadius: '20px',
@@ -115,7 +115,7 @@ const PartenaireSection = () => {
       <div
         className="absolute"
         style={{
-          top: isWidth1440 ? 'calc(80% - 80px)' : 'calc(77% - 100px)', // Descendre en 1440px
+          top: isWidth1440 ? 'calc(80% - 120px)' : 'calc(77% - 100px)', // Descendre en 1440px
         }}
       >
         <button
