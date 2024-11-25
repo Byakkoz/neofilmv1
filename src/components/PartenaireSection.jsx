@@ -115,7 +115,7 @@ const PartenaireSection = () => {
       <div
         className="absolute"
         style={{
-          top: isWidth1440 ? 'calc(80% - -20px)' : 'calc(77% - 100px)', // Descendre en 1440px
+          top: isWidth1440 ? 'calc(80% - -35px)' : 'calc(77% - 100px)', // Descendre en 1440px
         }}
       >
         <button
