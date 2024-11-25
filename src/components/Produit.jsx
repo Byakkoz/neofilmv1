@@ -10,6 +10,7 @@ const Produit = () => {
   // Constantes pour vérifier différentes largeurs d'écran
   const isBelow768 = useMediaQuery({ maxWidth: 768 });
   const isBelow480 = useMediaQuery({ maxWidth: 480 });
+  const isWidth1440 = useMediaQuery({ minWidth: 1440, maxWidth: 1440 });
 
   return (
     <section
@@ -31,16 +32,17 @@ const Produit = () => {
       ></animated.div>
 
       {/* Titre */}
-      <h2
-        className="relative font-bold bg-gradient-to-r from-[#EE5DFB] to-[#11E8FA] bg-clip-text text-transparent z-10"
-        style={{
-          fontFamily: 'Adieu, sans-serif',
-          top: isBelow768 ? '-420px' : '0px', // Remonter le titre en responsive
-          fontSize: isBelow480 ? '1.5rem' : isBelow768 ? '2rem' : '6rem', // Ajustement progressif du titre
-        }}
-      >
-        LE NEOFILM LED
-      </h2>
+              <h2
+          className="relative font-bold bg-gradient-to-r from-[#EE5DFB] to-[#11E8FA] bg-clip-text text-transparent z-10"
+          style={{
+            fontFamily: 'Adieu, sans-serif',
+            top: isWidth1440 ? '50px' : isBelow768 ? '-420px' : '0px', // Abaisser pour 1440px
+            fontSize: isBelow480 ? '1.5rem' : isBelow768 ? '2rem' : '6rem', // Ajustement progressif du titre
+          }}
+        >
+          LE NEOFILM LED
+        </h2>
+
 
       {/* Première image (en bas à droite) */}
       <div className={`relative inline-block ${isBelow768 ? 'mt-[150px] ml-[50px]' : 'mt-[380px] ml-[900px]'} z-10`}>
