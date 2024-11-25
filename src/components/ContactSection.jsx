@@ -47,25 +47,25 @@ const ContactSection = () => {
             top: isWidth1440 ? '28%' : isBelow768 ? '35%' : '27%', // Ajuste la position verticale pour 1440px
             left: isWidth1440 ? '14%' : isBelow768 ? '2.5%' : '12.5%', // Ajuste la position horizontale pour 1440px
             width: isWidth1440 ? '70%' : undefined, // Réduit la largeur pour 1440px
-            height: isWidth1440 ? '580px' : undefined, // Réduit la hauteur pour 1440px
+            height: isWidth1440 ? '400px' : undefined, // Réduit la hauteur pour 1440px
             zIndex: 1, // Arrière-plan par rapport au formulaire
           }}
         ></div>
 
 
-      {/* Cadre existant avec bordure en dégradé et fond en dégradé */}
-      <div
-        className={`${isBelow768 ? 'w-[90%] h-[400px]' : 'w-[70%] h-[500px]'} mx-auto relative`}
-        style={{
-          borderRadius: '20px', // Coins arrondis à 20px pour le cadre externe
-          marginTop: isWidth1440 ? '12%' : isBelow768 ? '30%' : '10%', // Descend un peu pour 1440px
-          width: isWidth1440 ? '68%' : undefined, // Réduit légèrement la largeur pour 1440px
-          height: isWidth1440 ? '480px' : undefined, // Réduit légèrement la hauteur pour 1440px
-          border: '2px solid', // Bordure avec épaisseur
-          borderImage: 'linear-gradient(90deg, #EE5DFB, #11E8FA)', // Bordure en dégradé linéaire
-          zIndex: 2, // Cadre par-dessus celui en 121212
-        }}
-      >
+        {/* Cadre existant avec bordure en dégradé et fond en dégradé */}
+        <div
+          className={`${isBelow768 ? 'w-[90%] h-[400px]' : 'w-[70%] h-[500px]'} mx-auto relative`}
+          style={{
+            borderRadius: '20px', // Coins arrondis à 20px pour le cadre externe
+            marginTop: isWidth1440 ? '12%' : isBelow768 ? '30%' : '10%', // Descend un peu pour 1440px
+            width: isWidth1440 ? '68%' : undefined, // Réduit légèrement la largeur pour 1440px
+            height: isWidth1440 ? '480px' : undefined, // Réduit légèrement la hauteur pour 1440px
+            border: '2px solid', // Bordure avec épaisseur
+            borderImage: 'linear-gradient(90deg, #EE5DFB, #11E8FA)', // Bordure en dégradé linéaire
+            zIndex: 2, // Cadre par-dessus celui en 121212
+          }}
+        >
 
         {/* Fond avec opacité */}
         <div
