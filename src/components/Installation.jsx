@@ -166,7 +166,7 @@ const Installation = () => {
             className="bg-gradient-to-b from-[#11E8FA] to-[#EE5DFB] rounded-lg p-0"
             style={{
               width: '510px', // Taille du cadre
-              height: isWidth1440 ? '900px' : '945px', // Diminution de la hauteur pour 1440px
+              height: isWidth1440 ? '780px' : '945px', // Diminution de la hauteur pour 1440px
             }}
           >
             <motion.img
