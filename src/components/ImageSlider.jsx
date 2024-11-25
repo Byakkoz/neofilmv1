@@ -120,7 +120,7 @@ const ImageSlider = () => {
 
       <div
       className={`absolute ${
-        isWidth1440 ? 'bottom-[-350px]' : 'bottom-[-510px]'
+        isWidth1440 ? 'bottom-[-550px]' : 'bottom-[-510px]'
       } ${isWidth1440 ? 'left-[calc(50%+500px)]' : 'left-[calc(50%+330px)]'} flex items-center justify-center space-x-2 p-[4px] rounded-full`}
       style={{
         background: 'linear-gradient(90deg, #79071E 0%, #11E8FA 100%)',
